@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1265.21">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px Menlo; color: #999999}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px Menlo; color: #dd1144}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px Menlo; color: #000080}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px Menlo; color: #333333}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px Menlo; color: #333333; min-height: 14.0px}
+    span.s1 {color: #000080}
+    span.s2 {color: #333333}
+    span.s3 {color: #008080}
+    span.s4 {color: #990000}
+    span.s5 {color: #009999}
+    span.s6 {color: #0086b3}
+    span.s7 {color: #dd1144}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1"><b>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"</b></p>
+<p class="p1"><b>"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</b></p>
+<p class="p2"><span class="s1">&lt;html</span><span class="s2"> </span><span class="s3">xmlns=</span>"http://www.w3.org/1999/xhtml"<span class="s1">&gt;</span></p>
+<p class="p3">&lt;head&gt;</p>
+<p class="p2"><span class="s1">&lt;meta</span><span class="s2"> </span><span class="s3">http-equiv=</span>"Content-Type"<span class="s2"> </span><span class="s3">content=</span>"text/html; charset=utf-8"<span class="s2"> </span><span class="s1">/&gt;</span></p>
+<p class="p4"><span class="s1">&lt;title&gt;</span>Moshing With Monsters<span class="s1">&lt;/title&gt;</span></p>
+<p class="p2"><span class="s1">&lt;meta</span><span class="s2"> </span><span class="s3">name=</span>"robots"<span class="s2"> </span><span class="s3">content=</span>"noindex"<span class="s2"> </span><span class="s1">/&gt;</span></p>
+<p class="p2"><span class="s1">&lt;link</span><span class="s2"> </span><span class="s3">rel=</span>"icon"<span class="s2"> </span><span class="s3">type=</span>"image/png"<span class="s2"> </span><span class="s3">href=</span>"icon.png"<span class="s2"> </span><span class="s1">/&gt;</span></p>
+<p class="p2"><span class="s1">&lt;link</span><span class="s2"> </span><span class="s3">rel=</span>"stylesheet"<span class="s2"> </span><span class="s3">type=</span>"text/css"<span class="s2"> </span><span class="s3">href=</span>"css/reset.css"<span class="s2"> </span><span class="s1">/&gt;</span></p>
+<p class="p2"><span class="s1">&lt;style </span><span class="s3">type=</span>"text/css"<span class="s1">&gt;</span></p>
+<p class="p4"><span class="s1">body</span>{<b>overflow:hidden</b>; <b>background:transparent</b>; }</p>
+<p class="p4"><span class="s4"><b>#contentW</b></span><b>,</b> <span class="s4"><b>#playlistW</b></span><b>,</b> <span class="s4"><b>#playerW</b></span>{ <b>position:absolute</b>; <b>overflow:hidden</b>;}</p>
+<p class="p4"><span class="s4"><b>#contentW</b></span>{<b>z-index:</b><span class="s5">10</span>; <b>top:</b><span class="s5">0</span>; <b>bottom:</b><span class="s5">0</span>; <b>left:</b><span class="s5">0</span>; <b>right:</b><span class="s5">0</span>;}</p>
+<p class="p4"><span class="s4"><b>#playlistW</b></span>{ <b>z-index:</b><span class="s5">1</span>; <b>right:</b><span class="s5">0</span>; <b>top:</b><span class="s5">0</span>; <b>bottom:</b><span class="s5">0</span>; <b>width:</b><span class="s5">0</span>; }</p>
+<p class="p4"><span class="s4"><b>#playerW</b></span>{<b>z-index:</b><span class="s5">2</span>; <b>left:</b><span class="s5">0</span>; <b>right:</b><span class="s5">0</span>; <b>height:</b><span class="s5">0</span>;}</p>
+<p class="p4"><span class="s4"><b>#content</b></span>{ <b>position:relative</b>; <b>height:</b><span class="s5">100%</span>; <b>width:</b><span class="s5">100%</span>;<span class="Apple-converted-space">  </span>}</p>
+<p class="p3">&lt;/style&gt;</p>
+<p class="p2"><span class="s1">&lt;link</span><span class="s2"> </span><span class="s3">rel=</span>"stylesheet"<span class="s2"> </span><span class="s3">type=</span>"text/css"<span class="s2"> </span><span class="s3">href=</span>"css/scm.css?168"<span class="s2"> </span><span class="s1">/&gt;</span></p>
+<p class="p2"><span class="s1">&lt;link</span><span class="s2"> </span><span class="s3">rel=</span>"stylesheet"<span class="s2"> </span><span class="s3">type=</span>"text/css"<span class="s2"> </span><span class="s3">data-bind=</span>"attr:{href:skin}"<span class="s2"> </span><span class="s3">id=</span>"skin"<span class="s2"> </span><span class="s1">/&gt;</span></p>
+<p class="p3">&lt;/head&gt;</p>
+<p class="p3">&lt;body&gt;</p>
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span></span><span class="s1">&lt;div</span><span class="s2"> </span><span class="s3">id=</span>"contentW"<span class="s2"> </span><span class="s3">data-bind=</span>"style:{top:placement()=='top'?'25px':'0',</p>
+<p class="p2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>bottom:placement()=='top'?'0':'25px', right:showPlaylist()?'202px':'0'}"<span class="s1">&gt;</span></p>
+<p class="p2"><span class="s1">&lt;script </span><span class="s3">type=</span>"text/javascript"<span class="s1">&gt;</span></p>
+<p class="p4">(<b>function</b>(){</p>
+<p class="p4"> <span class="Apple-tab-span">	</span><b>if</b>(<span class="s6">window</span><b>==</b><span class="s6">window</span>.parent)</p>
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>location.href <b>=</b> </span>'http://moshing-with-monsters.tumblr.com'<span class="s2">;</span></p>
+<p class="p4"><span class="Apple-tab-span">	</span><b>var</b> addEvent <b>=</b> <b>function</b>(elm, evType, fn) {</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>if</b>(elm.addEventListener)<span class="Apple-converted-space"> </span></p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>elm.addEventListener(evType, fn);</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>else</b> <b>if</b> (elm.attachEvent)<span class="Apple-converted-space"> </span></p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>elm.attachEvent(<span class="s7">'on'</span> <b>+</b> evType, fn);</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>else</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>elm[<span class="s7">'on'</span> <b>+</b> evType] <b>=</b> fn;</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>},</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>url <b>=</b> location.hash.substr(<span class="s5">1</span>),</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>host <b>=</b> url.substr(<span class="s5">0</span>,url.indexOf(<span class="s7">'/'</span>,<span class="s5">10</span>));</p>
+<p class="p5"><br></p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="s6">window</span>.SCMQueue <b>=</b> [];</p>
+<p class="p4"><span class="Apple-tab-span">	</span>addEvent(<span class="s6">window</span>,<span class="s7">'message'</span>,<b>function</b>(e){</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>var</b> data <b>=</b> e.data;</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>if</b>(data.indexOf(<span class="s7">'SCM'</span>)<b>!=</b><span class="s5">0</span>)<span class="Apple-converted-space"> </span></p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>return</b>;</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>if</b>(<span class="s6">window</span>.SCM <b>&amp;&amp;</b> <span class="s6">window</span>.Song)</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>(<b>new</b> <span class="s6">Function</span>(<span class="s7">"SCM,Song"</span>,data))(SCM,Song);</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>else</b></p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>SCMQueue.push(data);</p>
+<p class="p4"><span class="Apple-tab-span">	</span>});</p>
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span></span><span class="s6">document</span><span class="s2">.write(</span>'&lt;iframe src="javascript:location.replace(\''<span class="s2"><b>+</b>url<b>+</b></span>'\');" frameborder="0" id="content" allowtransparency="true" name="content"&gt;&lt;/iframe&gt;'<span class="s2">);</span></p>
+<p class="p4">})();</p>
+<p class="p3">&lt;/script&gt;</p>
+<p class="p3">&lt;/div&gt;</p>
+<p class="p2"><span class="s1">&lt;div</span><span class="s2"> </span><span class="s3">id=</span>"playerW"<span class="s2"> </span><span class="s3">data-bind=</span>"style:{ top:placement()=='top'?'0':'auto',<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-tab-span">	</span>bottom:placement()=='top'?'auto':'0',height:'25px'}"<span class="s1">&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;div</span><span class="s2"> </span><span class="s3">id=</span>"playlistW"<span class="s2"> </span><span class="s3">data-bind=</span>"style:{top:placement()=='top'?'25px':'0',</p>
+<p class="p2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>bottom:placement()=='top'?'0':'25px', width:showPlaylist()?'202px':'0'}"<span class="s1">&gt;&lt;/div&gt;</span></p>
+<p class="p5"><br></p>
+<p class="p2"><span class="s1">&lt;script </span><span class="s3">type=</span>"text/javascript"<span class="s2"> </span><span class="s3">src=</span>"js/lib/soundmanager/soundmanager2-nodebug-jsmin.js"<span class="s1">&gt;&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1">&lt;script </span><span class="s3">type=</span>"text/javascript"<span class="s2"> </span><span class="s3">src=</span>"config.js?168"<span class="s1">&gt;&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1">&lt;script </span><span class="s3">type=</span>"text/javascript"<span class="s2"> </span><span class="s3">src=</span>"js/lib/require/require.js"<span class="s1">&gt;&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1">&lt;script </span><span class="s3">type=</span>"text/javascript"<span class="s2"> </span><span class="s1">&gt;</span></p>
+<p class="p4">require([</p>
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span></span>'knockout'<span class="s2">,</span>'jquery'<span class="s2">,</span>'underscore'<span class="s2">,</span></p>
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span></span>'text!view/player.html'<span class="s2">,</span></p>
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span></span>'text!view/playlist.html'<span class="s2">,</span></p>
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span></span>'scm'<span class="s2">,</span>'song'<span class="s2">,</span>'scm.ui'<span class="s2">,</span></p>
+<p class="p5"><br></p>
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span></span>'binding/slider'<span class="s2">,</span></p>
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span></span>'binding/scm'</p>
+<p class="p4"><span class="Apple-tab-span">	</span>],<b>function</b>(ko,$,_,playerView,playlistView,SCM,Song){</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>$(<span class="s7">"#playerW"</span>).html(playerView);</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>$(<span class="s7">"#playlistW"</span>).html(playlistView);</p>
+<p class="p5"><br></p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>var</b> config <b>=</b> SCM.config;</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>SCM.config <b>=</b> _.once(<b>function</b>(data){</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>config(data);</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>ko.applyBindings(SCM,$(<span class="s7">'#skin'</span>).get(<span class="s5">0</span>));</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>setTimeout(<b>function</b>(){</p>
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>$(</span>'#contentW,#playerW,#playlistW'<span class="s2">).each(<b>function</b>(){</span></p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>ko.applyBindings(SCM,<b>this</b>);</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>$(<b>this</b>).mousedown(<b>function</b>(){</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>return</b> <b>false</b>;</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>});</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>});</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>},<span class="s5">200</span>);</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>});</p>
+<p class="p5"><br></p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>while</b>(SCMQueue.length <b>&gt;</b> <span class="s5">0</span>)</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>(<b>new</b> <span class="s6">Function</span>(<span class="s7">'SCM,Song'</span>,SCMQueue.shift()))(SCM,Song);</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s6">window</span>.SCM <b>=</b> SCM;</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s6">window</span>.Song <b>=</b> Song;</p>
+<p class="p5"><br></p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><b>var</b> resize <b>=</b> <b>function</b>(){</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>$(<span class="s7">'#content'</span>).height($(<span class="s7">'#contentW'</span>).height());</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>$(<span class="s6">window</span>).resize(_.throttle(resize,<span class="s5">100</span>));</p>
+<p class="p4"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>resize();</p>
+<p class="p5"><br></p>
+<p class="p4">    <b>var</b><span class="Apple-converted-space"> </span></p>
+<p class="p4">    shown <b>=</b> <b>false</b>,</p>
+<p class="p4">    checkAd <b>=</b> <b>function</b>(){</p>
+<p class="p4">      <b>if</b>(SCM.showAd() <b>&amp;&amp;</b> <b>!</b>shown){</p>
+<p class="p2"><span class="s2">        $.getScript(</span>'http://s3.buysellads.com/ac/bsa.js'<span class="s2">);</span></p>
+<p class="p4">        shown <b>=</b> <b>true</b>;</p>
+<p class="p4">      }</p>
+<p class="p4">    };</p>
+<p class="p4">    SCM.showAd.subscribe(checkAd);</p>
+<p class="p4">    checkAd();</p>
+<p class="p4"><span class="Apple-tab-span">	</span>});</p>
+<p class="p3">&lt;/script&gt;</p>
+<p class="p3">&lt;/body&gt;</p>
+<p class="p3">&lt;/html&gt;</p>
+</body>
+</html>
